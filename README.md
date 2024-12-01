@@ -15,7 +15,7 @@ Text-to-Speech Conversion: The translated text is converted into speech using th
 The output is saved as an MP3 file that can be played back.
 
 # Get Started💫
-#### 1. Its recommended to install the modules/libraries in a virtual environment. In order to create one run the codes given below in the windows terminal/bash.
+#### 1. Its recommended to install the modules/libraries in a virtual environment. In order to create one, run the codes given below in the windows terminal/bash.
 
 - Use the cd command to navigate to your project's folder:
 ```bash
