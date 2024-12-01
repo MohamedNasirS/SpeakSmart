@@ -72,4 +72,4 @@ pip install -r Requirements.txt
 - **GUI Integration:** Adding a graphical user interface for easier user interaction.
 - **Voice Command Features:** Implementing voice command capabilities for a hands-free experience.
 
-# Thank You
+# Thank You🙏🏻
