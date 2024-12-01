@@ -2,17 +2,17 @@
 # Speak Smart 🗣️
 This project is a Speech Translation and Text-to-Speech Converter, which allows users to perform the following tasks:
 
-Project Overview
+**Project Overview**
 
-Record Speech: The program records audio using a microphone and saves it as a WAV file.
+- *Record Speech*: The program records audio using a microphone and saves it as a WAV file.
 
-Speech Recognition: The recorded audio is processed using a speech recognition library to convert the user's spoken words into text.
+- *Speech Recognition:* The recorded audio is processed using a speech recognition library to convert the user's spoken words into text.
 
-Language Translation: The recognized text is translated into a user-specified language using the Translator class from the translate library.
+- *Language Translation:* The recognized text is translated into a user-specified language using the Translator class from the translate library.
 
-Text-to-Speech Conversion: The translated text is converted into speech using the Google Text-to-Speech (gTTS) library.
+- *Text-to-Speech Conversion:* The translated text is converted into speech using the Google Text-to-Speech (gTTS) library.
 
-The output is saved as an MP3 file that can be played back.
+- The output is saved as an MP3 file that can be played back.
 
 # Get Started💫
 #### 1. Its recommended to install the modules/libraries in a virtual environment. In order to create one, run the codes given below in the windows terminal/bash.
