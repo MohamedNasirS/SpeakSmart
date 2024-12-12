@@ -3,6 +3,7 @@ import wave
 from gtts import gTTS
 from translate import Translator
 import speech_recognition as sr
+from langdetect import detect
 
 # Function to record audio and save as WAV
 def record_audio(output_filename, duration=10, sample_rate=44100, channels=1, chunk_size=1024):
@@ -70,13 +71,17 @@ if __name__ == "__main__":
     text = recognize_speech_from_file(wav_file)
 
     if text:
-        # Step 3: Translate the text
-        language = input("Which language do you want to translate your saying to: ")
-        translator = Translator(to_lang=language)
+        # Step 3: Detect the language of the recognized text
+        detected_language = detect(text)
+        print(f"Detected language: {detected_language}")
+
+        # Step 4: Translate the text
+        target_language = input("Which language do you want to translate your saying to (e.g., 'es' for Spanish, 'fr' for French): ")
+        translator = Translator(from_lang=detected_language, to_lang=target_language)
         translation = translator.translate(text)
         print(f"Translation: {translation}")
 
-        # Step 4: Convert the translated text to speech
-        speech = gTTS(text=translation, lang=language, slow=False)
+        # Step 5: Convert the translated text to speech
+        speech = gTTS(text=translation, lang=target_language, slow=False)
         speech.save(mp3_file)
         print(f"Translated speech saved to {mp3_file}")
